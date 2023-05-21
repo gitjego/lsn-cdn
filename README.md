@@ -19,16 +19,16 @@ Usage:
 cdn <index>
 ```
 
-Replace \`<index>\` with the index number of the directory you want to change into. The index numbers are shown when running the \`lsn\` command.
+Replace `<index>\` with the index number of the directory you want to change into. The index numbers are shown when running the \`lsn\` command.
 
 ## Installation
 
 To install these functions, you need to download and run the \`installer.sh\` script. Open a terminal and run:
 
 ```bash
-curl -O https://raw.githubusercontent.com/gitjego/lsn-cdn/main/installer.sh
-chmod +x installer.sh
-./installer.sh
+curl -O https://raw.githubusercontent.com/gitjego/lsn-cdn/main/install.sh
+chmod +x install.sh
+./install.sh
 ```
 
 After running the script, the functions will be available in your current and future bash sessions.
