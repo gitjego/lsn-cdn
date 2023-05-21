@@ -19,7 +19,7 @@ Usage:
 cdn <index>
 ```
 
-Replace `<index>\` with the index number of the directory you want to change into. The index numbers are shown when running the \`lsn\` command.
+Replace `<index>` with the index number of the directory you want to change into. The index numbers are shown when running the \`lsn\` command.
 
 ## Installation
 
