@@ -10,10 +10,29 @@ Usage:
 ```bash
 lsn
 ```
+If output is:
+```bash
+1) readme.txt
+2) 'long folder name of projects'
+```
+Instead of typing \`cd 'long folder name of projects'\`, we can simply:
+```bash
+cdn 2
+```
 
+Or, if we know there are a ton of files and directories in our current folder, we can utilize grep to narrow things down
 ```bash
 lsn | grep 'projects'
 ```
+output:
+```bash
+2) 'long folder name of projects'
+```
+```bash
+cdn 2
+```
+
+
 
 ### cdn
 This function lets you change to a directory by specifying its index number as it appears in the output of the \`lsn\` function.
@@ -39,4 +58,4 @@ After running the script, the functions will be available in your current and fu
 
 ## Compatibility
 
-The script should be compatible with any Unix-like operating system that uses the Bash shell, e.g. Ubuntu, Debian, Fedora, CentOS, RHEL, Arch Linux, Manjaro, openSUSE, Alpine Linux, PopOS,  macOS and Windows Subsystem for Linux (WSL), etc.
+The script should be compatible with any Unix-like operating system that uses the Bash shell, e.g. Ubuntu, Debian, Fedora, CentOS, RHEL, Arch btw, Manjaro, openSUSE, Alpine Linux, PopOS,  macOS and Windows Subsystem for Linux (WSL), etc.
