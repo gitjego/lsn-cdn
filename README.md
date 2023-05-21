@@ -4,7 +4,7 @@ Add 2 new commands to bash to make navigating folders in the terminal easier: ls
 ## Functions
 
 ## lsn
-This function works similarly to the \`ls\` command but includes numbered lines in its output. It's especially useful in conjunction with the \`cdn\` function.
+This function works similarly to the \`ls\` command but includes numbered lines in its output. It's useful in tandem with the \`cdn\` function.
 
 Usage:
 ```bash
