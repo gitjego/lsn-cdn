@@ -11,6 +11,10 @@ Usage:
 lsn
 ```
 
+```bash
+lsn | grep 'projects'
+```
+
 ### cdn
 This function lets you change to a directory by specifying its index number as it appears in the output of the \`lsn\` function.
 
