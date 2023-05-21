@@ -24,12 +24,18 @@ EOF
 cat << EOF >> ~/.bashrc
 
 cdn() {
-    dirs=(*/)
-    cd "\${dirs[\$1-1]}"
+    files_and_dirs=(*/)
+    files_and_dirs+=(*)
+    # Verify the chosen index is a directory before trying to cd into it
+    if [ -d "${files_and_dirs[$1-1]}" ]; then
+        cd "${files_and_dirs[$1-1]}"
+    else
+        echo "Error: Not a directory"
+    fi
 }
 EOF
 
 # Source the updated .bashrc
 source ~/.bashrc
 
-echo "The lsn and cdn functions were successfully installed and are now available for use. Example usage: lsn <enter>, then cdn 1"
+echo "The lsn and cdn functions were successfully installed and are now available for use. It may be necessery to open a new terminal. Example usage: lsn <enter>, then cdn 1"
