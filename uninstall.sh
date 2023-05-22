@@ -1,8 +1,10 @@
 #!/bin/bash
 
-# remove the lsn and cdn function from .bashrc
-sed -i '/lsn() {/,/}/d' ~/.bashrc
-sed -i '/cdn() {/,/}/d' ~/.bashrc
+# Remove the lsn and cdn functions from .bashrc
+sed -i '/^lsn() {/,/^}$/d' ~/.bashrc
+sed -i '/^cdn() {/,/^}$/d' ~/.bashrc
+
+sed -i '/^$/N;/^\n$/D' ~/.bashrc
 
 # reload .bashrc
 source ~/.bashrc
